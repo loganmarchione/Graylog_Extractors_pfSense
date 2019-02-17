@@ -259,7 +259,7 @@
         {
           "type": "csv",
           "config": {
-            "column_header": "RuleNumber,SubRuleNumber,Anchor,Tracker,Interface,Reason,Action,Direction,IPVersion,TOS,ECN,TTL,Protocol,ProtocolID,Length,SourceIP,DestIP"
+            "column_header": "RuleNumber,SubRuleNumber,Anchor,Tracker,Interface,Reason,Action,Direction,IPVersion,TOS,ECN,TTL,Protocol,ProtocolID,Length,SourceIP,DestIP,UnknownFld"
           }
         }
       ],

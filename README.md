@@ -56,4 +56,4 @@ Click *Save* at the bottom of the page when you are done.
 Then, click *Manage extractors*, then click *Actions*, then *Import extractors*.  
 ![dashboard](img/20190701_002.png)
 
-Copy/paste the raw JSON [here](https://raw.githubusercontent.com/loganmarchione/graylog-pfsense-sg1100/master/sg1100.json) into the box and click *Add extractors to input*.
+Copy/paste the raw JSON [here](https://raw.githubusercontent.com/loganmarchione/Graylog_Extractors_pfSense/master/pfSense%20Extractors.json) into the box and click *Add extractors to input*.

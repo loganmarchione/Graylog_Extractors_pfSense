@@ -1,0 +1,20 @@
+{
+  "extractors": [
+    {
+      "title": "Suricata",
+      "extractor_type": "grok",
+      "converters": [],
+      "order": 0,
+      "cursor_strategy": "copy",
+      "source_field": "message",
+      "target_field": "",
+      "extractor_config": {
+        "grok_pattern": "\\[%{INT:pfsense_app_id}\\]: \\[%{DATA:suricata_signature_id}\\] %{DATA:suricata_description} \\[Classification: %{DATA:suricata_classification}\\] \\[Priority: %{INT:suricata_priority}\\] \\{%{WORD:suricata_protocol}\\} %{IP:suricata_ip_source_ip}:%{INT:suricata_source_port} -> %{IP:suricata_ip_destination_ip}:%{INT:suricata_destination_port}",
+        "named_captures_only": false
+      },
+      "condition_type": "regex",
+      "condition_value": "^suricata"
+    }
+  ],
+  "version": "4.0.1"
+}

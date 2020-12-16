@@ -34,7 +34,7 @@ This leaves a total of 13 combinations (below). For my purposes, I'm only using 
 
 In pfSense versions 2.5.0 and up, pfSense [offers the options](https://docs.netgate.com/pfsense/en/latest/monitoring/logs/settings.html) of either RFC 3164 (legacy) or RFC 5424 (modern).
 
-## pfSense Suricata logs
+### pfSense Suricata logs
 I'm assuming you have Suricata installed, your lists configured, and interfaces setup. If so, go to *Services*, then *Suricata*, and then click *Edit* on your interface. Enable *Send Alerts to System Log* and configure *Log Facility* and *Log Priority* (I left mine at the default).
 ![screenshot](img/20201216_002.png)
 

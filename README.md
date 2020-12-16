@@ -36,7 +36,7 @@ In pfSense versions 2.5.0 and up, pfSense [offers the options](https://docs.netg
 
 ### pfSense Suricata logs
 I'm assuming you have Suricata installed, your lists configured, and interfaces setup. If so, go to *Services*, then *Suricata*, and then click *Edit* on your interface. Enable *Send Alerts to System Log* and configure *Log Facility* and *Log Priority* (I left mine at the default).
-![screenshot](img/20201216_002.png)
+![screenshot](img/20201216_003.png)
 
 ## pfSense configuration
 Go to *Status*, then *System Logs*, then *Settings*, and scroll down to *Remote Logging Options*.

@@ -7,6 +7,7 @@ Graylog extractors for the following pfSense services:
 
 ## Explanation
 ### pfSense firewall logs
+#### pfSense versions up to 2.5.0
 In pfSense versions up to 2.5.0, pfSense used logs in the RFC 3164 format. The format of the actual log message is [broken down as follows](https://docs.netgate.com/pfsense/en/latest/monitoring/logs/raw-filter-format.html) (hostname is not included in syslog data sent to remote log hosts):  
 ```<Timestamp> <Hostname> filterlog: <CSV data>```  
 
@@ -32,11 +33,12 @@ This leaves a total of 13 combinations (below). For my purposes, I'm only using 
   * ICMP Default
 * ~~CARP/VRRP~~
 
-In pfSense versions 2.5.0 and up, pfSense [offers the options](https://docs.netgate.com/pfsense/en/latest/monitoring/logs/settings.html) of either RFC 3164 (legacy) or RFC 5424 (modern). Their RFC 3164 format slightly changed from 2.4.5-p1, so new extractors are needed.
-
 ### pfSense Suricata logs
 I'm assuming you have Suricata installed, your lists configured, and interfaces setup. If so, go to *Services*, then *Suricata*, and then click *Edit* on your interface. Enable *Send Alerts to System Log* and configure *Log Facility* and *Log Priority* (I left mine at the default).
 ![screenshot](img/20201216_003.png)
+
+#### pfSense versions 2.5.0 and up
+In pfSense versions 2.5.0 and up, pfSense [offers the options](https://docs.netgate.com/pfsense/en/latest/monitoring/logs/settings.html) of either RFC 3164 (legacy) or RFC 5424 (modern). Their RFC 3164 format slightly changed from 2.4.5-p1, so new extractors are needed.
 
 ## pfSense remote logging configuration
 Go to *Status*, then *System Logs*, then *Settings*, and scroll down to *Remote Logging Options*.

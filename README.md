@@ -76,7 +76,7 @@ Copy/paste the raw JSON file(s) below into the box and click *Add extractors to 
  - [Firewall](https://raw.githubusercontent.com/loganmarchione/Graylog_Extractors_pfSense/master/RFC_3164/pfSense_Extractors_Firewall.json)  
  - [Suricata](https://raw.githubusercontent.com/loganmarchione/Graylog_Extractors_pfSense/master/RFC_3164/pfSense_Extractors_Suricata.json)  
 
-**pfSense version 2.5.0 (RFC 3164 - Netgate slightly changed the format)**
+**pfSense version 2.5.0 (RFC 3164)**
   - [Firewall](https://raw.githubusercontent.com/loganmarchione/Graylog_Extractors_pfSense/master/RFC_3164/pfSense_Extractors_Firewall_2.5.0.json)
   - Suricata - I have not tested the old file, so I can't guarantee it will work on pfSense 2.5.0.
 

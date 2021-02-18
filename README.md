@@ -70,7 +70,7 @@ Go to *System/Inputs*-->*Inputs*. From the dropdown, select an input of type *Sy
 Then, click *Manage extractors*, then click *Actions*, then *Import extractors*.  
 ![screenshot](img/20190701_002.png)
 
-Copy/paste the raw JSON file below into the box and click *Add extractors to input*. Repeat for each file you want to import.  
+Copy/paste the raw JSON file(s) below into the box and click *Add extractors to input*. Repeat for each file you want to import.  
 
 **pfSense versions up to and including 2.4.5-p1 (RFC 3164)**
  - [Firewall](https://raw.githubusercontent.com/loganmarchione/Graylog_Extractors_pfSense/master/RFC_3164/pfSense_Extractors_Firewall.json)  
@@ -78,3 +78,8 @@ Copy/paste the raw JSON file below into the box and click *Add extractors to inp
 
 **pfSense version 2.5.0 (RFC 3164 - Netgate slightly changed the format)**
   - [Firewall](https://raw.githubusercontent.com/loganmarchione/Graylog_Extractors_pfSense/master/RFC_3164/pfSense_Extractors_Firewall_2.5.0.json)
+  - Suricata - I have not tested the old file, so I can't guarantee it will work on pfSense 2.5.0.
+
+**pfSense version 2.5.0 (RFC 5424)**
+  - Firewall - Coming soon
+  - Suricata - Coming soon

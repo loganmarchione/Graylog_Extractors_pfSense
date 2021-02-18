@@ -59,8 +59,9 @@ Then, click *Manage extractors*, then click *Actions*, then *Import extractors*.
 
 Copy/paste the raw JSON file below into the box and click *Add extractors to input*. Repeat for each file you want to import.  
 
-pfSense versions up to and including 2.4.5-p1 (RFC 3164)
- - [Firewall](https://raw.githubusercontent.com/loganmarchione/Graylog_Extractors_pfSense/master/pfSense_Extractors_Firewall.json)  
- - [Suricata](https://raw.githubusercontent.com/loganmarchione/Graylog_Extractors_pfSense/master/pfSense_Extractors_Suricata.json)  
+**pfSense versions up to and including 2.4.5-p1 (RFC 3164)**
+ - [Firewall](https://raw.githubusercontent.com/loganmarchione/Graylog_Extractors_pfSense/master/RFC_3164/pfSense_Extractors_Firewall.json)  
+ - [Suricata](https://raw.githubusercontent.com/loganmarchione/Graylog_Extractors_pfSense/master/RFC_3164/pfSense_Extractors_Suricata.json)  
 
-pfSense version 2.5.0 (RFC 3164 - They slightly changed the format)
+**pfSense version 2.5.0 (RFC 3164 - Netgate slightly changed the format)**
+  - [Firewall](https://raw.githubusercontent.com/loganmarchione/Graylog_Extractors_pfSense/master/RFC_3164/pfSense_Extractors_Firewall_2.5.0.json)

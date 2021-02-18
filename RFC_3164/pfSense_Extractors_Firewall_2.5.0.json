@@ -1,0 +1,47 @@
+{
+  "extractors": [
+    {
+      "title": "pfSense filterlog: IPv4 UDP",
+      "extractor_type": "regex",
+      "converters": [
+        {
+          "type": "csv",
+          "config": {
+            "column_header": "pf_rule,pf_subrule,pf_anchor,pf_tracker,pf_interface,pf_reason,pf_action,pf_direction,pf_ip_ver,pf_ipv4_tos,pf_ipv4_ecn,pf_ipv4_ttl,pf_ipv4_id,pf_ipv4_offset,pf_ipv4_flags,pf_ipv4_protocol_id,pf_ipv4_protocol,pf_ip_length,pf_ip_source_ip,pf_ip_destination_ip,pf_udp_source_port,pf_udp_destination_port,pf_udp_data_length"
+          }
+        }
+      ],
+      "order": 1,
+      "cursor_strategy": "copy",
+      "source_field": "message",
+      "target_field": "FilterData",
+      "extractor_config": {
+        "regex_value": "^filterlog\\[?\\d+\\]:\\s+(.*)$"
+      },
+      "condition_type": "regex",
+      "condition_value": "^filterlog\\[?\\d+\\]:\\s+.*,(in|out),4,.*,udp,.*$"
+    },
+    {
+      "title": "pfSense filterlog: IPv4 TCP",
+      "extractor_type": "regex",
+      "converters": [
+        {
+          "type": "csv",
+          "config": {
+            "column_header": "pf_rule,pf_subrule,pf_anchor,pf_tracker,pf_interface,pf_reason,pf_action,pf_direction,pf_ip_ver,pf_ipv4_tos,pf_ipv4_ecn,pf_ipv4_ttl,pf_ipv4_id,pf_ipv4_offset,pf_ipv4_flags,pf_ipv4_protocol_id,pf_ipv4_protocol,pf_ip_length,pf_ip_source_ip,pf_ip_destination_ip,pf_tcp_source_port,pf_tcp_destination_port,pf_tcp_data_length,pf_tcp_flags,pf_tcp_sequence_number,pf_tcp_ack_number,pf_tcp_window,pf_tcp_urg,pf_tcp_options"
+          }
+        }
+      ],
+      "order": 0,
+      "cursor_strategy": "copy",
+      "source_field": "message",
+      "target_field": "FilterData",
+      "extractor_config": {
+        "regex_value": "^filterlog\\[?\\d+\\]:\\s+(.*)$"
+      },
+      "condition_type": "regex",
+      "condition_value": "^filterlog\\[?\\d+\\]:\\s+.*,(in|out),4,.*,tcp,.*$"
+    }
+  ],
+  "version": "4.0.2"
+}

@@ -49,7 +49,7 @@
         {
           "type": "csv",
           "config": {
-            "column_header": "pf_rule,pf_subrule,pf_anchor,pf_tracker,pf_interface,pf_reason,pf_action,pf_direction,pf_ip_ver,pf_ipv4_tos,pf_ipv4_ecn,pf_ipv4_ttl,pf_ipv4_id,pf_ipv4_offset,pf_ipv4_flags,pf_ipv4_protocol_id,pf_ipv4_protocol,pf_ip_length,pf_ip_source_ip,pf_ip_destination_ip,pf_tcp_source_port,pf_tcp_destination_port,pf_tcp_data_length,pf_tcp_flags,pf_tcp_sequence_number,pf_tcp_ack_number,pf_tcp_window,pf_tcp_urg,pf_tcp_options"
+            "column_header": "pf_rule,pf_subrule,pf_anchor,pf_tracker,pf_interface,pf_reason,pf_action,pf_direction,pf_ip_ver,pf_ipv6_class,pf_ipv6_flow,pf_ipv6_hop,pf_ipv6_protocol,pf_ipv6_protocol_id,pf_ip_length,pf_ip_source_ip,pf_ip_destination_ip,pf_tcp_source_port,pf_tcp_destination_port,pf_tcp_data_length,pf_tcp_flags,pf_tcp_sequence_number,pf_tcp_ack_number,pf_tcp_window,pf_tcp_urg,pf_tcp_options"
           }
         }
       ],
@@ -70,7 +70,7 @@
         {
           "type": "csv",
           "config": {
-            "column_header": "pf_rule,pf_subrule,pf_anchor,pf_tracker,pf_interface,pf_reason,pf_action,pf_direction,pf_ip_ver,pf_ipv4_tos,pf_ipv4_ecn,pf_ipv4_ttl,pf_ipv4_id,pf_ipv4_offset,pf_ipv4_flags,pf_ipv4_protocol_id,pf_ipv4_protocol,pf_ip_length,pf_ip_source_ip,pf_ip_destination_ip,pf_udp_source_port,pf_udp_destination_port,pf_udp_data_length"
+            "column_header": "pf_rule,pf_subrule,pf_anchor,pf_tracker,pf_interface,pf_reason,pf_action,pf_direction,pf_ip_ver,pf_ipv6_class,pf_ipv6_flow,pf_ipv6_hop,pf_ipv6_protocol,pf_ipv6_protocol_id,pf_ip_length,pf_ip_source_ip,pf_ip_destination_ip,pf_udp_source_port,pf_udp_destination_port,pf_udp_data_length"
           }
         }
       ],

@@ -57,8 +57,11 @@ On the same page, scroll down to *Remote Logging Options*.
 Click *Save* at the bottom of the page when you are done.
 
 ### pfSense Suricata logs
-I'm assuming you have Suricata installed, your lists configured, and interfaces setup. If so, go to *Services*, then *Suricata*, and then click *Edit* on your interface. Enable *Send Alerts to System Log* and configure *Log Facility* and *Log Priority* (I left mine at the default).
-![screenshot](img/20201216_003.png)
+I'm assuming you have Suricata installed, your lists configured, and interfaces setup. If so, go to *Services*-->*Suricata*, and then click *Edit* on your interface.
+* Enable (check the box) next to *Send Alerts to System Log*
+* Configure *Log Facility* and *Log Priority* (I left mine at the default).
+
+Click *Save* at the bottom of the page when you are done.
 
 ## Graylog configuration
 Go to *System/Inputs*, then *Inputs*. From the dropdown, select an input of type *Syslog UDP* and click *Launch new input*. From the *Node* dropdown, select your node. Under *Port*, set the port you specified in pfSense (e.g., 514). Click *Save* at the bottom of the page when you are done.  

@@ -34,7 +34,9 @@ This gives a total of 13 combinations (below). My are extractors for everything 
 * ~~CARP/VRRP~~
 
 #### pfSense versions 2.5.0 and up
-In pfSense versions 2.5.0 and up, pfSense [offers the options](https://docs.netgate.com/pfsense/en/latest/monitoring/logs/settings.html) of either RFC 3164 (legacy) or RFC 5424 (modern). Their RFC 3164 format slightly changed from 2.4.5-p1, so new extractors are needed.
+In pfSense versions 2.5.0 and up, pfSense [offers the options](https://docs.netgate.com/pfsense/en/latest/monitoring/logs/settings.html) of either RFC 3164 (legacy) or RFC 5424 (modern).
+  - RFC 3164: Netgate's RFC 3164 format slightly changed from 2.4.5-p1, so new extractors were needed. They included the PID of the filterlog process in the log, where they didn't before.
+  - RFC 5424: I have not tested this yet, so I do not have extractors for it.
 
 ## pfSense configuration
 Go to *Status*, then *System Logs*, then *Settings*, and scroll down to *Remote Logging Options*.

@@ -52,14 +52,14 @@ Go to *Status*-->*System Logs*-->*Settings*-->*General Logging Options*.
 On the same page, scroll down to *Remote Logging Options*.
 * Enable (check the box) next to *Send log messages to remote syslog server*
 * Input the Graylog server name and port in the box (you can send logs to up to three remote log servers)
-* Select your event types (I typically enable *System Events*, *Firewall Events*, *DHCP Events*, and *Network Time Protocol Events*.
+* Select your event types (I typically enable *System Events*, *Firewall Events*, *DHCP Events*, and *Network Time Protocol Events*)
 
 Click *Save* at the bottom of the page when you are done.
 
 ### pfSense Suricata logs
 I'm assuming you have Suricata installed, your lists configured, and interfaces setup. If so, go to *Services*-->*Suricata*, and then click *Edit* on your interface.
 * Enable (check the box) next to *Send Alerts to System Log*
-* Configure *Log Facility* and *Log Priority* (I left mine at the default).
+* Configure *Log Facility* and *Log Priority* (I left mine at the default)
 
 Click *Save* at the bottom of the page when you are done.
 

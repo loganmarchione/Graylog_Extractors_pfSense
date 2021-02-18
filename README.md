@@ -17,7 +17,7 @@ The CSV data consists of the following:
 * Then IP data
 * Then protocol-specific data (e.g., TCP, UDP, or ICMP)
 
-This gives a total of 13 combinations (below). There are extractors for everything but CARP/VRRP.
+This gives a total of 13 combinations (below). My are extractors for everything but CARP/VRRP.
 * IPv4 TCP
 * IPv4 UDP
 * IPv6 TCP

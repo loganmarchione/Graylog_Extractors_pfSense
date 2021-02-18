@@ -39,13 +39,20 @@ In pfSense versions 2.5.0 and up, pfSense [offers the options](https://docs.netg
   - RFC 5424: I have not tested this yet, so I do not have extractors for it.
 
 ## pfSense configuration
-Go to *Status*, then *System Logs*, then *Settings*, and scroll down to *Remote Logging Options*.
+Go to *Status*-->*System Logs*-->*Settings*-->*General Logging Options*.
+* Select your log type (RFC 3164 or RFC 5424)
+* I enable (check the box) on the following options:
+  * *Log packets matched from the default block rules in the ruleset*
+  * *Log packets matched from the default pass rules put in the ruleset*
+  * *Log packets blocked by 'Block Bogon Networks' rules*
+  * *Log packets blocked by 'Block Private Networks' rules*
+  * *Log errors from the web server process*
+  * *Disable writing log files to the local disk*
 
-You may want to change some settings under *General Logging Options*. For example, I make sure to enable *Log packets matched from the default block rules in the ruleset* so that I can see things blocked from coming into my network.
-![screenshot](img/20201216_002.png)
-
-Enable *Send log messages to remote syslog server*, input the Graylog server name and port in the box (you can send logs to up to three remote log servers), then select *System Events* and *Firewall Events*.
-![screenshot](img/20201216_001.png)
+On the same page, scroll down to *Remote Logging Options*.
+* Enable (check the box) next to *Send log messages to remote syslog server*
+* Input the Graylog server name and port in the box (you can send logs to up to three remote log servers)
+* Select your event types (I typically enable *System Events*, *Firewall Events*, *DHCP Events*, and *Network Time Protocol Events*.
 
 Click *Save* at the bottom of the page when you are done.
 

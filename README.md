@@ -2,7 +2,7 @@
 
 ## Overview
 Graylog extractors for the following pfSense services:
-* Firewall (I do not have IPv6 extractors)
+* Firewall
 * Suricata
 
 ## Explanation
@@ -17,11 +17,11 @@ The CSV data consists of the following:
 * Then IP data
 * Then protocol-specific data (e.g., TCP, UDP, or ICMP)
 
-This leaves a total of 13 combinations (below). For my purposes, I'm only using IPv4 and the ICMP responses (10 combinations).
+This gives a total of 13 combinations (below). There are extractors for everything but CARP/VRRP.
 * IPv4 TCP
 * IPv4 UDP
-* ~~IPv6 TCP~~
-* ~~IPv6 UDP~~
+* IPv6 TCP
+* IPv6 UDP
 * Eight different responses for ICMP
   * ICMP Echo
   * ICMP Unreachable protocol

@@ -16,12 +16,12 @@ The CSV data consists of the following:
 * Then IP data
 * Then protocol-specific data (e.g., TCP, UDP, or ICMP)
 
-This leaves a total of 13 combinations (below). For my purposes, I'm only using IPv4 and the ICMP responses.
+This leaves a total of 13 combinations (below). For my purposes, I'm only using IPv4 and the ICMP responses (10 combinations).
 * IPv4 TCP
 * IPv4 UDP
 * ~~IPv6 TCP~~
 * ~~IPv6 UDP~~
-* Nine different responses for ICMP
+* Eight different responses for ICMP
   * ICMP Echo
   * ICMP Unreachable protocol
   * ICMP Unreachable port
@@ -30,9 +30,9 @@ This leaves a total of 13 combinations (below). For my purposes, I'm only using 
   * ICMP TStamp
   * ICMP TStamp Reply
   * ICMP Default
-  * ~~ICMP IPv6~~
+* ~~CARP/VRRP~~
 
-In pfSense versions 2.5.0 and up, pfSense [offers the options](https://docs.netgate.com/pfsense/en/latest/monitoring/logs/settings.html) of either RFC 3164 (legacy) or RFC 5424 (modern).
+In pfSense versions 2.5.0 and up, pfSense [offers the options](https://docs.netgate.com/pfsense/en/latest/monitoring/logs/settings.html) of either RFC 3164 (legacy) or RFC 5424 (modern). Their RFC 3164 format slightly changed from 2.4.5-p1, so new extractors are needed.
 
 ### pfSense Suricata logs
 I'm assuming you have Suricata installed, your lists configured, and interfaces setup. If so, go to *Services*, then *Suricata*, and then click *Edit* on your interface. Enable *Send Alerts to System Log* and configure *Log Facility* and *Log Priority* (I left mine at the default).
